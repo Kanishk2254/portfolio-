@@ -15,7 +15,13 @@ function addLine(){
 if(index >= lines.length){
 
 setTimeout(()=>{
-document.getElementById("boot-screen").style.display = "none"
+const boot = document.getElementById("boot-screen")
+
+boot.style.opacity = "0"
+
+setTimeout(()=>{
+boot.style.pointerEvents = "none"
+},500)
 },800)
 
 return
