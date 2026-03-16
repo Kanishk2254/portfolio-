@@ -20,8 +20,9 @@ const boot = document.getElementById("boot-screen")
 boot.style.opacity = "0"
 
 setTimeout(()=>{
-boot.style.pointerEvents = "none"
-},500)
+boot.remove()
+},600)
+
 },800)
 
 return
@@ -41,11 +42,3 @@ setTimeout(addLine,700)
 }
 
 addLine()
-
-const boot = document.getElementById("boot-screen")
-
-boot.style.opacity = "0"
-
-setTimeout(()=>{
-boot.remove()
-},700)
