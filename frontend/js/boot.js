@@ -1,4 +1,4 @@
-const lines = [
+const bootLines = [
 "Initializing Krypton AI...",
 "Loading Neural Interface...",
 "Connecting Systems...",
@@ -12,7 +12,7 @@ let index = 0
 
 function addLine(){
 
-if(index >= lines.length){
+if(index >= bootLines.length){
 
 setTimeout(()=>{
 const boot = document.getElementById("boot-screen")
@@ -30,7 +30,7 @@ return
 const line = document.createElement("div")
 
 line.className = "boot-line"
-line.textContent = lines[index]
+line.textContent = bootLines[index]
 
 bootText.appendChild(line)
 
