@@ -41,3 +41,11 @@ setTimeout(addLine,700)
 }
 
 addLine()
+
+const boot = document.getElementById("boot-screen")
+
+boot.style.opacity = "0"
+
+setTimeout(()=>{
+boot.remove()
+},700)
